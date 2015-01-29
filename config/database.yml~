@@ -1,0 +1,20 @@
+development:
+  adapter: postgresql
+  database: mydb_in_dev
+  encoding: unicode
+  pool: 5
+  username: gabe
+  password:
+
+test:
+  adapter: postgresql
+  database: mydb_in_test
+  pool: 5
+  username: gabe
+  password:
+
+production:
+  adapter: postgresql
+  database: mydb_in_prod
+  pool: 5
+  timeout: 5000
