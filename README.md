@@ -24,17 +24,21 @@
 7) `rails s` to start your server
 
 ### Consideration:
-* Pragmatik has a built-in admin system [http://localhost:3000/admin], but not setup with authorizations, so any user can access it. To change this:
+* Pragmatik has a built-in admin system [http://localhost:3000/admin](http://localhost:3000/admin), but not setup with authorizations, so any user can access it. To change this:
      * Create an user
-     * Go to [http://localhost:3000/admin/role/new] and create a role named 'admin' and then select your user.
+     * Go to [http://localhost:3000/admin/role/new](http://localhost:3000/admin/role/new) and create a role named 'admin' and then select your user.
      * In **models/ability.rb** add:
-             ```ruby
+        
+        ```ruby
         if user.has_role? :admin
+        
           can :manage, :all
+          
         else
+        
           can :read, :all
+          
         end
         ```
-        
     
         
