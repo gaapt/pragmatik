@@ -2,14 +2,10 @@
 *Building blocks for agile, manageable and deployable apps*
 
 ### Main used gems:
-
- -Devise
- 
- -Cancan
- 
- -Rolify
- 
- -rails_admin
+-Devise
+-Cancan
+-Rolify
+-rails_admin
 ### Basic tutorial:
 
 1)Install Ruby on Rails environment
